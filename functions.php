@@ -384,6 +384,27 @@ function catch_fullscreen_scripts() {
 	if ( ! class_exists( 'Jetpack' ) ) {
 		wp_enqueue_script( 'jquery-fitvids', trailingslashit( esc_url ( get_template_directory_uri() ) ) . 'assets/js/fitvids.min.js', array( 'jquery' ), '1.1', true );
 	}
+
+	// Slick styles and scripts (partner logo carousel)
+	wp_register_style('Slick_style', '//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css');
+	wp_enqueue_style('Slick_style');
+	wp_register_style('Slick_Theme_style', '//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css');
+	wp_enqueue_style('Slick_Theme_style');
+	wp_register_script('Slick', '//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js', array('jquery'), null, true);
+	wp_enqueue_script('Slick');
+
+	/*
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+	```
+
+	Then, before your closing ```<body>``` tag add:
+
+	```html
+	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+	*/
 }
 add_action( 'wp_enqueue_scripts', 'catch_fullscreen_scripts' );
 
