@@ -550,5 +550,6 @@ if ( ! function_exists( 'catch_fullscreen_sections' ) ) :
 		get_template_part( 'template-parts/portfolio/display','portfolio');
 		get_template_part( 'template-parts/hero-content/content','hero' );
 		get_template_part( 'template-parts/testimonial/display', 'testimonial' );
+		get_template_part( 'template-parts/partners/content', 'partners' );
 	}
 endif;

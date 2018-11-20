@@ -454,6 +454,11 @@ require get_parent_theme_file_path( '/inc/featured-slider.php' );
 require get_parent_theme_file_path( '/inc/service.php' );
 
 /**
+ * Include Partners
+ */
+require get_parent_theme_file_path( '/inc/partners.php' );
+
+/**
  * Add Metaboxes
  */
 require get_parent_theme_file_path( 'inc/metabox/metabox.php' );
