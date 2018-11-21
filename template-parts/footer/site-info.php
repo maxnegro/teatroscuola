@@ -14,7 +14,7 @@ $footer_text = sprintf(
 		esc_attr( date_i18n( __( 'Y', 'catch-fullscreen' ) ) ),
 		'<a href="'. esc_url( home_url( '/' ) ) .'">'. esc_attr( get_bloginfo( 'name', 'display' ) ) . '</a>',
 		function_exists( 'get_the_privacy_policy_link' ) ? get_the_privacy_policy_link() : ''
-	) . ' &#124; ' . esc_html( $theme_data->get( 'Name') ) . '&nbsp;' . esc_html__( 'by', 'catch-fullscreen' ). '&nbsp;<a target="_blank" href="'. esc_url( $theme_data->get( 'AuthorURI' ) ) .'">'. esc_html( $theme_data->get( 'Author' ) ) .'</a>';
+	) . ' &#124; ' . 'Design' . '&nbsp;' . esc_html__( 'by', 'catch-fullscreen' ). '&nbsp;<a target="_blank" href="'. esc_url( $theme_data->get( 'AuthorURI' ) ) .'">'. esc_html( $theme_data->get( 'Author' ) ) .'</a>';
 ?>
 
 <div id="site-generator">
@@ -26,4 +26,3 @@ $footer_text = sprintf(
 		</div> <!-- .wrapper -->
 	</div><!-- .site-info -->
 </div> <!-- #site-generator -->
-

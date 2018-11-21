@@ -10,7 +10,8 @@
 	<?php
 	$header_image = catch_fullscreen_featured_overall_image();
 
-	if ( 'disable' === $header_image || is_front_page() ) : ?>
+	// if ( ('disable' === $header_image) || is_front_page() ) :
+	if ( ('disable' === $header_image) ) : ?>
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
