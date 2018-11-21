@@ -424,7 +424,7 @@ if ( ! function_exists( 'catch_fullscreen_header_description' ) ) :
 			if ( $header_media_text ) {
 				echo $before . '<p>' . wp_kses_post( $header_media_text ) . '</p>' . $after;
 			}
-		} elseif ( is_singular() && ! is_page() ) {
+		} elseif ( is_singular() && ! is_page() && ('team_member' !== get_post_type()) ) {
 			echo $before . '<div class="entry-header"><div class="entry-meta">';
 				catch_fullscreen_posted_on();
 			echo '</div><!-- .entry-meta --></div>' . $after;

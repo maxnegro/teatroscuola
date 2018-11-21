@@ -31,6 +31,12 @@ get_header(); ?>
 						'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'catch-fullscreen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous Post', 'catch-fullscreen' ) . '</span> <span class="nav-title">%title</span>',
 						'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'catch-fullscreen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next Post', 'catch-fullscreen' ) . '</span> <span class="nav-title">%title</span>',
 					) );
+				} elseif ( is_singular( 'team_member' ) ) {
+					// Previous/next post navigation.
+					the_post_navigation( array(
+						'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'catch-fullscreen' ) . '</span> <span class="nav-title"><< %title</span>',
+						'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'catch-fullscreen' ) . '</span> <span class="nav-title">%title >></span>',
+					) );
 				}
 
 				// End of the loop.
