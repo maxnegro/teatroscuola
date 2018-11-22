@@ -2502,9 +2502,9 @@ h6:first-child {
 	text-align: left;
 }
 
-.section .entry-content-wrapper .entry-header {
+/* .section .entry-content-wrapper .entry-header {
 	max-width: 520px;
-}
+} */
 
 .section .hentry-inner .entry-header {
 	margin: unset;
