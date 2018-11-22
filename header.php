@@ -33,7 +33,7 @@
 	<?php if ( is_front_page() ) : ?>
 	<div id="fullpage">
 	<?php endif; ?>
-		<?php catch_fullscreen_sections(); ?>
+		<?php get_template_part( 'template-parts/header/header', 'media' ); ?>
 
 		<?php if ( ! ( is_front_page() && is_home() ) ) : ?>
 		<div id="content" class="site-content section">

@@ -11,6 +11,8 @@
 			</div><!-- .wrapper -->
 		</div><!-- .site-content -->
 		<?php endif; ?>
+		<?php catch_fullscreen_sections(); ?>
+
 		<?php get_template_part( 'template-parts/partners/content', 'partners' ); ?>
 
 		<?php get_template_part( 'template-parts/footer/footer', 'instagram' ); ?>

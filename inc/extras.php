@@ -543,7 +543,7 @@ if ( ! function_exists( 'catch_fullscreen_sections' ) ) :
 	 * Display Sections on header and footer with respect to the section option set in catch_fullscreen_sections_sort
 	 */
 	function catch_fullscreen_sections( $selector = 'header' ) {
-		get_template_part( 'template-parts/header/header', 'media' );
+		// get_template_part( 'template-parts/header/header', 'media' );
 		get_template_part( 'template-parts/slider/content', 'slider' );
 		get_template_part( 'template-parts/featured-content/display','featured' );
 		get_template_part( 'template-parts/service/content','service' );
