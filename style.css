@@ -1882,7 +1882,7 @@ body:not(.home) #page {
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	position: relative;
 }
 
@@ -4361,6 +4361,12 @@ body .fp-slidesNav ul li {
  */
 
 @media screen and (min-width: 64em) {
+
+	.site-header-main {
+		flex-wrap: wrap;
+	}
+
+
 	.mobile-nav-disable.desktop-nav-on-header #updownnav,
 	.mobile-nav-disable.desktop-nav-on-page-right #fp-nav {
 		display: block;
