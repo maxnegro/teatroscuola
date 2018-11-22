@@ -149,6 +149,9 @@ function catch_fullscreen_setup() {
 	if ( class_exists( 'Essential_Content_Types_Pro' ) ) {
 		add_theme_support( 'ect-alt-featured-image-ect-service' );
 	}
+
+	// Add support for page excerpt, used for featured slider
+	add_post_type_support( 'page', 'excerpt' );
 }
 endif; // catch_fullscreen_setup
 add_action( 'after_setup_theme', 'catch_fullscreen_setup' );

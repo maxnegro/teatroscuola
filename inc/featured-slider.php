@@ -142,6 +142,9 @@ if ( ! function_exists( 'catch_fullscreen_post_page_category_slider' ) ) :
 								<a title="' . $title_attribute . '" href="' . esc_url( get_permalink() ) . '">' . the_title( '<span>','</span>', false ) . '</a>
 							</h2>
 						</header>
+						<div class="entry-summary">
+						' . get_the_excerpt() . '
+						</div>
 					</div><!-- .entry-container -->
 				</div><!-- .slider-content-wrapper -->
 			</div></article><!-- .slides -->';
