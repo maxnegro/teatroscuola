@@ -472,6 +472,11 @@ require get_parent_theme_file_path( 'inc/metabox/metabox.php' );
 require get_parent_theme_file_path( '/inc/widgets/social-icons.php' );
 
 /**
+ * Include sort tweaking
+ */
+require get_parent_theme_file_path( '/inc/prev-next-post-sort.php' );
+
+/**
  * Modifies tag cloud widget arguments to have all tags in the widget same font size.
  *
  * @since Catch Fullscreen 1.0
