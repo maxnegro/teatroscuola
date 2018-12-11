@@ -408,6 +408,8 @@ function catch_fullscreen_scripts() {
 	```html
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
 	*/
+	wp_register_style('Cards_style', trailingslashit( esc_url ( get_template_directory_uri() ) ) . 'assets/css/cards.css', null, $theme_version );
+	wp_enqueue_style('Cards_style');
 }
 add_action( 'wp_enqueue_scripts', 'catch_fullscreen_scripts' );
 
