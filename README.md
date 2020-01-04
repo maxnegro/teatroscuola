@@ -1,2 +1,2 @@
-# cartellone-plugin
+# teatroscuola
 Wordpress theme for teatroscuola.cloud
