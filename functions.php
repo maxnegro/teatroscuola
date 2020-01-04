@@ -408,6 +408,8 @@ function catch_fullscreen_scripts() {
 	```html
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
 	*/
+	wp_register_style('Cards_style', trailingslashit( esc_url ( get_template_directory_uri() ) ) . 'assets/css/cards.css', null, $theme_version );
+	wp_enqueue_style('Cards_style');
 }
 add_action( 'wp_enqueue_scripts', 'catch_fullscreen_scripts' );
 
@@ -470,6 +472,11 @@ require get_parent_theme_file_path( 'inc/metabox/metabox.php' );
  * Include Widgets
  */
 require get_parent_theme_file_path( '/inc/widgets/social-icons.php' );
+
+/**
+ * Include sort tweaking
+ */
+require get_parent_theme_file_path( '/inc/prev-next-post-sort.php' );
 
 /**
  * Modifies tag cloud widget arguments to have all tags in the widget same font size.
@@ -588,3 +595,6 @@ function catch_fullscreen_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 add_action( 'tgmpa_register', 'catch_fullscreen_register_required_plugins' );
+
+// Enable JS fallback for contact-form-7
+add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
